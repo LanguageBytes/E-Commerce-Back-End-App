@@ -39,10 +39,40 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
+
+  try {
+    const categoryInfo = await Category.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!categoryInfo) {
+      res.status(404).json({ message: 'No user found with this ID' });
+      return;
+    }
+    res.status(200).json(categoryInfo);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
+  try {
+    const categoryInfo = await Category.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    if (!categoryInfo) {
+      res.status(400).json({ message: "Category ID not found" });
+      return;
+    }
+    res.status(200).json(categoryInfo);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
