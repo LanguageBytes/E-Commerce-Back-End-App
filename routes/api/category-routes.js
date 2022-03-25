@@ -12,9 +12,9 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
   // find all categories
   // be sure to include its associated Products
-
   router.get("/:id", async (req, res) => {
     try {
      //obtains only a single entry from the table, using the provided primary key.
@@ -22,7 +22,6 @@ router.get('/', async (req, res) => {
         include: [{ model: Product }],
       });
       res.status(200).json(categoryInfo);
-
     } catch (err) {
       res.status(500).json(err);
     }
@@ -30,6 +29,12 @@ router.get('/', async (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
+  try {
+    const categoryInfo = await Category.create(req.body);
+    res.status(200).json(categoryInfo);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.put('/:id', (req, res) => {
