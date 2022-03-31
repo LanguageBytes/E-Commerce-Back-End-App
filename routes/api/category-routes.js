@@ -2,23 +2,19 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
-
-router.get('/', async (req, res) => {
-
   // find all categories
   // be sure to include its associated Products
    
   // GET all categories
-  router.get('/', async (req, res) => {
-    try {
-      const categoryInfo = await Category.findAll({
-        include: [{ model: Product }],
-      });
-      res.status(200).json(categoryInfo);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+    router.get('/', async (req, res) => {
+      try {
+        const categoryInfo = await Category.findAll();
+        res.status(200).json(categoryInfo);
+        
+      } catch (err) {
+        res.status(500).json(err);
+      }
+    });
 
   // GET one product
     router.get("/:id", async (req, res) => {
@@ -76,6 +72,5 @@ router.delete('/:id', (req, res) => {
       res.json(err);
     });
   });
-})
 
 module.exports = router;
