@@ -1,8 +1,8 @@
 # <p align ="center"> E-Commerce Back End Application Object-Relational Mapping (ORM) </p>
 
-## Description
-
 <p align ="center"> <img src="E-Commerce-Backend.gif"/> </p>
+
+## Description
 
 A simple E-commerce backend application which will let the user make get, post, update and delete requests.
 
@@ -30,35 +30,25 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
 
-### Walkthrough Video: 37%
+## Installation
+   
+ ```
+ npm i
 
-* A walkthrough video that demonstrates the functionality of the e-commerce back end must be submitted, and a link to the video should be included in your readme file.
+ ```
+ *node must be installed.
 
-* The walkthrough video must show all of the technical acceptance criteria being met.
+## Usage
 
-* The walkthrough video must demonstrate how to create the schema from the MySQL shell.
+Log into sql and enter your credential details into the example .env file (remove the word EXAMPLE from the file name)
 
-* The walkthrough video must demonstrate how to seed the database from the command line.
+Run the following commands in the terminal:
 
-* The walkthrough video must demonstrate how to start the application’s server.
+ ```
+ 
+ npm run seed
 
-* The walkthrough video must demonstrate GET routes for all categories, all products, and all tags being tested in Insomnia.
+ npm start
 
-* The walkthrough video must demonstrate GET routes for a single category, a single product, and a single tag being tested in Insomnia.
-
-* The walkthrough video must demonstrate POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia.
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Connects to a MySQL database using the [MySQL2](https://www.npmjs.com/package/mysql) and [Sequelize](https://www.npmjs.com/package/sequelize) packages.
-
-  * Stores sensitive data, like a user’s MySQL username, password, and database name, using environment variables through the [dotenv](https://www.npmjs.com/package/dotenv) package.
-
-  * Syncs Sequelize models to a MySQL database on the server start.
-
-  * Includes column definitions for all four models outlined in the homework instructions.
-
-  * Includes model associations outlined in the homework instructions.
+ ```
 
