@@ -8,6 +8,8 @@
 
 A simple E-commerce backend application which will let the user make get, post, update and delete requests.
 
+Link to demonstration video: https://watch.screencastify.com/v/Xlv0eZUU5TlT56r1m5aT
+
 ## User Story
 
 ```md
