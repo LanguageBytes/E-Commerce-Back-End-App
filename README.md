@@ -2,7 +2,7 @@
 
 ## Description
 
-<p align ="center"> <img src="E-commerce-Backend.gif"/> </p>
+<p align ="center"> <img src="E-Commerce-Backend.gif"/> </p>
 
 A simple E-commerce backend application which will let the user make get, post, update and delete requests.
 
