@@ -1,6 +1,8 @@
-# E-Commerce Back End (Object-Relational Mapping (ORM))
+# <p align ="center"> E-Commerce Back End Application Object-Relational Mapping (ORM) </p>
 
 ## Description
+
+<p align ="center"> <img src="E-commerce-Backend.gif"/> </p>
 
 A simple E-commerce backend application which will let the user make get, post, update and delete requests.
 
