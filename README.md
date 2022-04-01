@@ -1,6 +1,8 @@
 # <p align ="center"> E-Commerce Back End Application Object-Relational Mapping (ORM) </p>
 
-<p align ="center"> <img src="E-Commerce-Backend.gif"/> </p>
+<p align ="center">
+ <img src= "E-Commerce-Backend.gif"/> 
+ </p>
 
 ## Description
 
