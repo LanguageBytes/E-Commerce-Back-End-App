@@ -1,7 +1,7 @@
 # <p align ="center"> E-Commerce Back End Application Object-Relational Mapping (ORM) </p>
 
 <p align ="center">
- <img src= "E-Commerce-Backend.gif"/> 
+ <img src= "Assets/E-Commerce-Backend.gif"/> 
  </p>
 
 ## Description
@@ -42,7 +42,7 @@ THEN I am able to successfully create, update, and delete data in my database
 
 ## Usage
 
-Log into sql and enter your credential details into the example .env file (remove the word EXAMPLE from the file name)
+Log into mysql and enter your credential details into the example .env file (remove the word EXAMPLE from the file name)
 
 Run the following commands in the terminal:
 
